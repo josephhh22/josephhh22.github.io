@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Bead of Fun</title>
     <style>
         /* Style for the banner */
@@ -23,32 +25,48 @@
 
         /* Container to hold image and text */
         .content {
-            display: flex; /* Enables side-by-side layout */
-            align-items: center; /* Aligns items vertically */
-            max-width: 800px; /* Adjust as needed */
-            margin: 20px auto; /* Centers the content */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap; /* Allows stacking on smaller screens */
+            max-width: 90%; /* Adjust width to fit mobile screens */
+            margin: 20px auto;
         }
 
         /* Image styling */
         .content img {
-            width: 300px; /* Adjust image size */
+            width: 100%; /* Full width on small screens */
+            max-width: 300px; /* Limits max size on larger screens */
             height: auto;
-            margin-right: 20px; /* Space between image and text */
+            margin-right: 20px;
         }
 
-        /* Text styling */
+        /* Text container */
         .text {
             display: flex;
-            flex-direction: column; /* Stack text in rows */
+            flex-direction: column;
+            flex: 1; /* Takes remaining space */
+            min-width: 200px; /* Prevents text from shrinking too much */
         }
 
         .text p {
-            margin: 5px 0; /* Space between text rows */
-            font-size: 18px; /* Adjust text size */
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 600px) {
+            .content {
+                flex-direction: column; /* Stacks image and text vertically */
+                text-align: center; /* Centers text */
+            }
+
+            .content img {
+                margin: 0 auto 10px; /* Centers image */
+            }
         }
     </style>
 </head>
-
 <body>
 
     <div class="banner">
@@ -59,7 +77,9 @@
     <p>Welcome to my website!</p> 
 
     <div class="content">
-        <img src="images/multiple.jpeg" alt="Beads Image">
+        <a href="newpage.html" target="_blank">
+            <img src="images/multiple.jpeg" alt="Beads Image">
+        </a>
         <div class="text">
             <p>Row 1: Learn the art of bead-making.</p>
             <p>Row 2: Explore different bead styles and techniques.</p>
@@ -67,14 +87,5 @@
         </div>
     </div>
 
-    <div class="content">
-        <img src="images/multiple.jpeg" alt="Beads Image">
-        <div class="text">
-            <p>222</p>
-            <p>@22</p>
-            <p>222</p>
-        </div>
-    </div>
-    
 </body>
 </html>
