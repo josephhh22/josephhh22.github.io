@@ -21,13 +21,30 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
-        /* Resize image */
-        img {
-            float: left; /* Aligns images to the left */
-            width: 300px; /* Adjust as needed */
-            height: auto; /* Keeps aspect ratio */
-            display: block; /* Prevents extra spacing */
-            margin: 10px auto; /* Centers image */
+        /* Container to hold image and text */
+        .content {
+            display: flex; /* Enables side-by-side layout */
+            align-items: center; /* Aligns items vertically */
+            max-width: 800px; /* Adjust as needed */
+            margin: 20px auto; /* Centers the content */
+        }
+
+        /* Image styling */
+        .content img {
+            width: 300px; /* Adjust image size */
+            height: auto;
+            margin-right: 20px; /* Space between image and text */
+        }
+
+        /* Text styling */
+        .text {
+            display: flex;
+            flex-direction: column; /* Stack text in rows */
+        }
+
+        .text p {
+            margin: 5px 0; /* Space between text rows */
+            font-size: 18px; /* Adjust text size */
         }
     </style>
 </head>
@@ -40,9 +57,15 @@
 
     <h1>Hi, I'm KKKKKKKKKKK</h1>  
     <p>Welcome to my website!</p> 
-    <p>
-        <img src="images/multiple.jpeg" />
-    </p>
+
+    <div class="content">
+        <img src="images/multiple.jpeg" alt="Beads Image">
+        <div class="text">
+            <p>Row 1: Learn the art of bead-making.</p>
+            <p>Row 2: Explore different bead styles and techniques.</p>
+            <p>Row 3: Join our community of bead enthusiasts!</p>
+        </div>
+    </div>
 
 </body>
 </html>
