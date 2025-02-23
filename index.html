@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Bead of Fun</title>
     <style>
+        /* Apply grey background to the entire page */
+        body {
+            background-color: #f0f0f0; /* Light grey background */
+            margin: 0;
+            padding: 0;
+        }
+
         /* Style for the banner */
         .banner {
             background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg');
@@ -31,6 +38,10 @@
             flex-wrap: wrap; /* Allows stacking on smaller screens */
             max-width: 90%; /* Adjust width to fit mobile screens */
             margin: 20px auto;
+            background: white; /* White background for content sections */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         /* Image styling */
@@ -66,13 +77,12 @@
             }
         }
 
-                /* Style for the horizontal rule */
+        /* Style for the horizontal rule */
         hr {
             border: 0;
             border-top: 2px solid black; /* You can adjust the color and thickness here */
             margin: 20px 0; /* Adds some space above and below the line */
         }
-        
     </style>
 </head>
 <body>
@@ -83,7 +93,6 @@
 
     <h1>Welcome to my shop!</h1>  
     
-
     <div class="content">
         <a href="newpage.html" target="_blank">
             <img src="images/multiple.jpeg">
@@ -95,16 +104,13 @@
             <p>No after sales service/warranty provided.</p>
         </div>
     </div>
-    <!-- Solid line between sections -->
+    
     <hr>
     
-  <!-- New Section with Line Break -->
     <section>
         <p>List of Items:</p>
     </section>
      
-
-    
     <div class="content">
         <a href="newpage.html" target="_blank">
             <img src="images/iron_man.jpg">
@@ -112,7 +118,7 @@
         <div class="text">
             <p> <b>#1 Iron Man</b></p>
             <p>$10 (Reserved for Uncle Indra)</p>
-            <p>Get ready to experience the power and precision of Iron Man like never before! This amazing piece of artwork showcases all the energy, style, and creativity that make Iron Man one of the greatest superheroes. Every detail is carefully crafted, capturing the boldness and brilliance of Tony Stark’s armor, shining with metallic colors and a sense of unstoppable strength.</p>
+            <p>Get ready to experience the power and precision of Iron Man like never before! This amazing piece of artwork showcases all the energy, style, and creativity that make Iron Man one of the greatest superheroes.</p>
         </div>
     </div>
 
@@ -123,24 +129,22 @@
         <div class="text">
             <p><b>#2 Unicorn</b></p>
             <p>$12</p>
-            <p>A graceful and enchanting unicorn, full of color and wonder, perfect for anyone who believes in the impossible. Let this mystical creation inspire joy and spark your imagination!</p>
-       
+            <p>A graceful and enchanting unicorn, full of color and wonder, perfect for anyone who believes in the impossible.</p>
         </div>
     </div>
 
-
-        <div class="content">
+    <div class="content">
         <a href="newpage.html" target="_blank">
             <img src="images/my_melody.jpg">
         </a>
         <div class="text">
             <p><b>#3 My Melody</b></p>
             <p>$15</p>
-            <p>This adorable artwork brings My Melody to life with her cute, cozy style and cheerful spirit. Perfect for adding a touch of sweetness and joy to any room!</p>
+            <p>This adorable artwork brings My Melody to life with her cute, cozy style and cheerful spirit.</p>
         </div>
     </div>
 
-        <div class="content">
+    <div class="content">
         <a href="newpage.html" target="_blank">
             <img src="images/pikachu.jpg">
         </a>
@@ -150,7 +154,6 @@
             <p>Pika Pika! What else do you need to know?</p>
         </div>
     </div>
-    
     
 </body>
 </html>
